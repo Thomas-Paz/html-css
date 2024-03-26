@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Midias</title>
+</head>
+<body>
+    <nav
+     style="font-size: 4rem;
+     margin-left: 40%;
+     
+     ">PAZZANO</nav>
+     <!-- fazendo imagens responsivas -->
+     <picture>
+        <source media="(max-width: 750px )" srcset="imagens/model750.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/model.png" type="image/png">
+        <img src="imagens/model1500.png" alt="modelo pazzano">
+     </picture>
+     <!-- Colocando Audio no site -->
+     <!-- <audio src="imagens/spotifydown.com - Montagem Mysterious Game.mp3" controls autoplay>Phonk</audio> -->
+     <h4>Audios</h4>
+     <audio preload="metadata" controls>
+        <source src="imagens/spotifydown.com - Montagem Mysterious Game.mp3" type="audio/mpeg">
+     </audio>
+     <h4>Videos</h4>
+     <video controls width="1100px" loop muted autoplay>
+      <source src="imagens/camaleao.mp4" type="video/mp4">
+      <source src="imagens/Camaleao.mkv" type="video/mkv">
+      <source src="imagens/Camaleao.webm" type="video/webm">
+      <source src="imagens/camaleao.ogv" type="video/ogg">
+      <p>Seu Navegador não tem compatibilidade com a reprodução de Vídeos.</p>
+     </video>
+     <h2>Videos Externos</h2>
+     <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&autoplay=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

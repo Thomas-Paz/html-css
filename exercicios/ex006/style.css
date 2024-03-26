@@ -1,0 +1,49 @@
+body {
+    background-image: linear-gradient(45deg, rgb(197, 103, 111), rgb(211, 15, 211));
+    background-attachment: fixed;
+}
+
+h1 {
+    font: italic bold 1.8em 'Courier New', Courier, monospace; 
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+
+}
+
+.main {
+    background-color: blueviolet;
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.segundo {
+    background-color: blueviolet;
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.segundo p {
+    display: none;
+}
+.segundo:hover p {
+    display: block;
+    color: black;
+}
+
+.segundo:hover {
+    background-color: rgb(194, 219, 241);
+}
+
+li {
+    list-style: none;
+    
+}

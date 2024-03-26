@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-padrao: Georgia, 'Times mew Roman', Times;
+    --font-destaque: 'Bebas Neue', cursive; 
+    --font-android: 'Android', cursive;
+}
+body {
+    background: aquamarine;
+}
+header {
+    background-image: linear-gradient(45deg, rgb(35, 167, 35), rgb(60, 163, 34));
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-family: var(--font-destaque);
+    
+}
+header h1 {
+    font-size: 3.5em;
+    text-shadow: 6px 3px 4px black;
+
+}
+header p {
+    font-size: 16px;
+    color: black;
+}
+nav {
+    margin-top: 30px;
+}
+nav a {
+text-decoration: none;
+color: white;
+padding: 10px;
+margin-top: 15px;
+font-size: 1.2em;
+transition-duration: 0.2s;
+}
+nav a:hover{
+    border-radius: 10px;
+    background-color: green;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    border:10px solid rgb(255, 255, 255);
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    color: rgb(1, 51, 1);
+    font-size: 1.8em;
+}
+main h3 {
+    background-image: linear-gradient(90deg, rgb(110, 245, 110), white);
+    font-size: 1.5em;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--font-android);
+}
+article {
+    font-size: 18px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main h4 {
+border: 10px solid green;
+background-color: green;
+font-size: 1.5em;
+color: white;
+border-radius: 5px;
+}
+#tabela {
+    background-image: linear-gradient(90deg, rgb(100, 223, 100), rgb(154, 231, 119));
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+#tabela ul {
+    
+    list-style:none;
+    text-transform: capitalize;
+    columns: 2;
+    padding: 10px;
+    
+    
+    
+    
+}
+
+#tabela p {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+footer {
+    background-color: rgb(14, 117, 0);
+   margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+iframe {
+    background-color: rgb(14, 156, 14);
+    border: 25px solid rgb(14, 156, 14);
+    border-radius: 10px;
+}
+
+footer a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(234, 238, 232);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.foto {
+    width: 480px;
+    display: block;
+    margin: auto;
+    
+}
+
+article p {
+    text-align: justify;
+}
+
