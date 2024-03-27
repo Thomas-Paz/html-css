@@ -2,4 +2,27 @@
 
 body {
     background: black;
+    background-image: url(/exercicios/ex010/midia/wallpaper005.jpg);
+    background-size: cover;
+    height: 98.2vh;
+}
+main {
+    
+    background-color: rgb(68, 68, 68);
+    width: 800px;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5px 5px 8px black;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+    text-align: justify;
+    text-shadow: 10px 10px 12px black;
 }
