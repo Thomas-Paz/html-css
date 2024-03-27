@@ -1,0 +1,18 @@
+.quadrado {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+div#q1 {
+    background-image: url("/exercicios/ex009/midia/wallpaper002.jpg");
+}
+div#q2 {
+background-image: url("/exercicios/ex009/midia/wallpaper001.jpg");
+}
+div#q3 {
+background-image: url("/exercicios/ex009/midia/pattern001.png");
+}
