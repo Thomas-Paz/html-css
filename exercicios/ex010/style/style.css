@@ -1,15 +1,17 @@
 @charset "UTF-8";
 
 body {
+    height: 100vh;
     background: black;
     background-image: url(/exercicios/ex010/midia/wallpaper002.jpg);
     background-size: cover;
-    height: 98.2vh;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 main {
     
     background-color: rgb(68, 68, 68);
-    width: 800px;
+    width: 60%;
     padding: 15px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
