@@ -6,3 +6,18 @@ h1 {
     color: aliceblue;
     text-align: center;
 }
+
+#sessao {
+    position: relative;
+    height: 500px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+#conteudo {
+    position: absolute;
+    height: 250px;
+    width: 500px;
+    background-color: blueviolet;
+
+}
