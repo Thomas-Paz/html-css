@@ -8,10 +8,13 @@ h1 {
 }
 
 #sessao {
+    background-image: url(/exercicios/ex010/midia/target001.png);
+    background-size: 100% 100%;
     position: relative;
     height: 500px;
     background-color: aqua;
     padding: 15px;
+    margin: 30px;
 }
 
 #conteudo {
@@ -19,5 +22,7 @@ h1 {
     height: 250px;
     width: 500px;
     background-color: blueviolet;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
