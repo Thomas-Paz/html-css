@@ -33,7 +33,7 @@ header h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font2);
-    font-size: 5vw;
+    font-size: 3em;
 }
 
 header h4 {
@@ -55,6 +55,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 2em;
 }
 section.normal {
     background-color: white;
@@ -65,15 +67,12 @@ section.imagem {
     background-color: bisque;
 }
 section.imagem p {
-   width: 400px;
+   display: inline-block;
    background-color: rgba(219, 159, 159, 0.712);
+   padding: 15px;
+   
 }
 
-section  p {
-    font-family: var(--font3);
-    font-size: 2vw;
-    margin-left: 1px;
-}
 
 footer {
     background-color: black;
