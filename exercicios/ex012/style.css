@@ -58,20 +58,39 @@ section {
     font-family: var(--font3);
     font-size: 2em;
 }
+section > p {
+    padding-bottom: 2em;
+   }
+
 section.normal {
     background-color: white;
     color: rgb(0, 0, 0);
 }
 
 section.imagem {
-    background-color: bisque;
+    background-color: rgb(253, 251, 248);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
+    background-attachment: fixed;
 }
 section.imagem p {
    display: inline-block;
-   background-color: rgba(219, 159, 159, 0.712);
+   background-color: rgba(2, 2, 2, 0.712);
    padding: 15px;
+   color: white;
    
 }
+section#imagem01 {
+background-image: url(/exercicios/ex012/midia/imagens/background001.jpg);
+background-position: center;
+background-size: cover;
+}
+section#imagem02 {
+    background-image: url(/exercicios/ex012/midia/imagens/background002.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
 
 
 footer {
