@@ -1,231 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabela Grande</title>
     <style>
-        body {
-            background-color: gray;
-        }
-        h1 {
-            text-align: center;
-        }
-        table {
-            border: 5px solid white;
-            width: 1000px;
-            border-collapse: collapse;
-        }
-        td {
-            border: 1px solid white;
-            padding: 5px;
-            color: lightyellow;
-            text-shadow: 1px 1px black;
-        }
+      body {
+        background-color: rgb(179, 175, 175);
+        font-family: "Times New Roman", Times, serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        
+      }
+      table {
+        width: 700px;
+        border: 2px solid white;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid white;
+        text-align: left;
+        padding: 5px;
+      }
+      thead,
+      tfoot {
+        background-color: rgba(0, 0, 0, 0.788);
+        color: rgb(253, 246, 232);
+      }
+      td a {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+
+      td a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Tabela Grande</h1>
+      <h1>Tabela Grande</h1>
     </header>
     <main>
-        <table>
-            <tr>
-                <td>A 1</td>
-                <td>B 1</td>
-                <td>C 1</td>
-                <td>D 1</td>
-                <td>E 1</td>
-                <td>F 1</td>
-                <td>G 1</td>
-                <td>H 1</td>
-                <td>I 1</td>
-                <td>J 1</td>
-                <td>K 1</td>
-            </tr>
-            <tr>
-                <td>A 2</td>
-                <td>B 2</td>
-                <td>C 2</td>
-                <td>D 2</td>
-                <td>E 2</td>
-                <td>F 2</td>
-                <td>G 2</td>
-                <td>H 2</td>
-                <td>I 2</td>
-                <td>J 2</td>
-                <td>K 2</td>
-            </tr>
-            <tr> 
-                <td>A 3</td>
-                <td>B 3</td>
-                <td>C 3</td>
-                <td>D 3</td>
-                <td>E 3</td>
-                <td>F 3</td>
-                <td>G 2</td>
-                <td>H 3</td>
-                <td>I 3</td>
-                <td>J 3</td>
-                <td>K 3</td>
-            </tr>
-            <tr>
-                <td>A 4</td>
-                <td>B 4</td>
-                <td>C 4</td>
-                <td>D4</td>
-                <td>E 4</td>
-                <td>F4</td>
-                <td>G 4</td>
-                <td>H 4</td>
-                <td>I 4</td>
-                <td>J 4</td>
-                <td>K 4</td>
-            </tr>
-            <tr>
-                <td>A 5</td>
-                <td>B 5</td>
-                <td>C 5</td>
-                <td>D 5</td>
-                <td>E 5</td>
-                <td>F 5</td>
-                <td>G 5</td>
-                <td>H 5</td>
-                <td>I 5</td>
-                <td>J 5</td>
-                <td>K 5</td>
-            </tr>
-            <tr>
-                <td>A 6</td>
-                <td>B 6</td>
-                <td>C 6</td>
-                <td>D 6</td>
-                <td>E 6</td>
-                <td>F 6</td>
-                <td>G 6</td>
-                <td>H 6</td>
-                <td>I 6</td>
-                <td>J 6</td>
-                <td>K 6</td>
-            </tr>
-            <tr>
-                <td>A 7</td>
-                <td>B 7</td>
-                <td>C 7</td>
-                <td>D 7</td>
-                <td>E 7</td>
-                <td>F 7</td>
-                <td>G 7</td>
-                <td>H 7</td>
-                <td>I 7</td>
-                <td>J 7</td>
-                <td>K 7</td>
-            </tr>
+      <!-- 
+            Anatomia para tabelas grandes 
 
-            <tr>
-                <td>A 8</td>
-                <td>B 8</td>
-                <td>C 8</td>
-                <td>D 8</td>
-                <td>E 8</td>
-                <td>F 8</td>
-                <td>G 8</td>
-                <td>H 8</td>
-                <td>I 8</td>
-                <td>J 8</td>
-                <td>K 8</td>
-            </tr>
-            <tr>
-                <td>A 9</td>
-                <td>B 9</td>
-                <td>C 9</td>
-                <td>D 9</td>
-                <td>E 9</td>
-                <td>F 9</td>
-                <td>G 9</td>
-                <td>H 9</td>
-                <td>I 9</td>
-                <td>J 9</td>
-                <td>K 9</td>
-            </tr><tr>
-                <td>A 10</td>
-                <td>B 10</td>
-                <td>C 10</td>
-                <td>D 10</td>
-                <td>E 10</td>
-                <td>F 10</td>
-                <td>G 10</td>
-                <td>H 10</td>
-                <td>I 10</td>
-                <td>J 10</td>
-                <td>K 10</td>
-                <tr>
-            </tr>
-                <td>B 11</td>
-                <td>A 11</td>
-                <td>C 11</td>
-                <td>D 11</td>
-                <td>E 11</td>
-                <td>F 11</td>
-                <td>G 11</td>
-                <td>H 11</td>
-                <td>I 11</td>
-                <td>J 11</td>
-                <td>K 11</td>
-            </tr>
-            <tr>
-                <td>A 12</td>
-                <td>B 12</td>
-                <td>C 12</td>
-                <td>D 12</td>
-                <td>E 12</td>
-                <td>F 12</td>
-                <td>G 12</td>
-                <td>H 12</td>
-                <td>I 12</td>
-                <td>J 12</td>
-                <td>K 12</td>
-            </tr>
-            <tr>
-                <td>A 13</td>
-                <td>B 13</td>
-                <td>C 13</td>
-                <td>D 13</td>
-                <td>E 13</td>
-                <td>F 13</td>
-                <td>G 13</td>
-                <td>H 13</td>
-                <td>I 13</td>
-                <td>J 13</td>
-                <td>K 13</td>
-            </tr>
-            <tr>
-                <td>A 14</td>
-                <td>B 14</td>
-                <td>C 14</td>
-                <td>D 14</td>
-                <td>E 14</td>
-                <td>F 14</td>
-                <td>G 14</td>
-                <td>H 14</td>
-                <td>I 14</td>
-                <td>J 14</td>
-                <td>K 14</td>
-            </tr>
-            <tr>
-                <td>A 15</td>
-                <td>B 15</td>
-                <td>C 15</td>
-                <td>D 15</td>
-                <td>E 15</td>
-                <td>F 15</td>
-                <td>G 15</td>
-                <td>H 15</td>
-                <td>I 15</td>
-                <td>J 15</td>
-                <td>K 15</td>
-            </tr>
-        </table>
+            TABLE 
+              THEAD 
+                 TR,TD, TH
+              TBODY 
+                 TR, TD, TH
+              TFOOT  
+                 TR, TD , TH 
+         -->
+      <table>
+        <thead>
+          <tr>
+            <th>Estado</th>
+            <th>População</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=s%C3%A3o+paulo+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08S33ls-aSQMAZAspAJpVrLVFURbQ%3A1712330125387&ei=jRUQZqqoF5DM5OUPgMKAmAM&udm=&gs_ssp=eJzj4tTP1TcwzEgxtTBg9BIsPrw4X6EgsTQnXyG1uCQxJR8Aj0kKLg&oq=s%C3%A3o+paulo+estad&gs_lp=Egxnd3Mtd2l6LXNlcnAiEHPDo28gcGF1bG8gZXN0YWQqAggAMgsQLhiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIaEC4YgAQYsQMYgwEYlwUY3AQY3gQY4ATYAQNI3iFQLlidHHACeAGQAQCYAX6gAY0FqgEDMC42uAEByAEA-AEBmAIJoAKQCsICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgILEC4YgwEYsQMYgATCAg4QABiABBiKBRixAxiDAcICEBAAGIAEGIoFGEMYsQMYgwHCAgsQABiABBixAxiDAcICChAAGIAEGIoFGEPCAgQQABgDwgIaEC4YgwEYsQMYgAQYlwUY3AQY3gQY4ATYAQPCAhQQLhiABBixAxiDARjHARivARiOBcICCBAuGIAEGLEDmAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUkgcHMi42LjUtMaAHjj4&sclient=gws-wiz-serp"
+                target="_blank"
+                >São Paulo</a
+              >
+            </td>
+            <td>44 411 238</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=minas+gerais&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08fqLXqaubvy3qYWVSgFWohq7aZ-A%3A1712330133819&ei=lRUQZu3NMZD05OUP_oC4gAo&udm=&gs_ssp=eJzj4tTP1TcwTM8wqzJg9OLJzcxLLFZITy1KzCwGAF8AB_k&oq=minas+ge&gs_lp=Egxnd3Mtd2l6LXNlcnAiCG1pbmFzIGdlKgIIADINEC4YQxixAxiABBiKBTIFEC4YgAQyChAAGIAEGIoFGEMyCBAAGIAEGLEDMgUQABiABDIKEAAYgAQYigUYQzIIEAAYgAQYsQMyDhAuGIAEGMcBGK8BGI4FMgUQABiABDIKEAAYgAQYigUYQzIcEC4YQxixAxiABBiKBRiXBRjcBBjeBBjgBNgBAUi9DlAAWL0HcAB4AZABAJgBjwGgAdcHqgEDMC44uAEDyAEA-AEBmAIIoAKFCMICChAuGIAEGIoFGCfCAgwQIxiABBiKBRgTGCfCAgoQIxiABBiKBRgnwgIKEC4YgAQYigUYQ8ICFxAuGIAEGIoFGJcFGNwEGN4EGOAE2AEBwgIEECMYJ8ICERAuGIAEGIoFGLEDGIMBGNQCwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBjHARjRA8ICCxAAGIAEGLEDGIMBwgIIEC4YgAQYsQPCAhAQLhiABBiKBRhDGMcBGNEDwgILEC4YgwEYsQMYgATCAg4QLhiABBiKBRixAxiDAcICCxAuGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAg0QABiABBiKBRhDGLEDwgIREC4YgAQYxwEYrwEYmAUYmQWYAwC6BgYIARABGBSSBwMwLjigB7KLAQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Minas Gerais</a
+              >
+            </td>
+            <td>20 538 718</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=rio+de+janeiro+%28estado%29&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0-XUQTMH-Q6Ic4Zxi9DU5iKDIvhqw%3A1712330323383&ei=UxYQZoXmFsuN5OUPyueG2A0&udm=&oq=rio+de+janeiro&gs_lp=Egxnd3Mtd2l6LXNlcnAiDnJpbyBkZSBqYW5laXJvKgIIADIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzINEAAYgAQYigUYQxiwAzINEAAYgAQYigUYQxiwAzINEAAYgAQYigUYQxiwAzINEAAYgAQYigUYQxiwAzIOEAAY5AIY1gQYsAPYAQEyDhAAGOQCGNYEGLAD2AEBMg4QABjkAhjWBBiwA9gBATITEC4YgAQYigUYQxjIAxiwA9gBAjITEC4YgAQYigUYQxjIAxiwA9gBAjIZEC4YgAQYigUYQxjHARivARjIAxiwA9gBAjIZEC4YgAQYigUYQxjHARivARjIAxiwA9gBAkiGCVAAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIJmAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIkgcBMaAHAA&sclient=gws-wiz-serp"
+                target="_blank"
+                >Rio de Janeiro</a
+              >
+            </td>
+            <td>16 054 524</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=bahia+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09J7dUBs0oltIge6fXw3Tjg8YCWbA%3A1712330444034&ei=zBYQZq2RAfvF5OUPps24yAo&udm=&gs_ssp=eJzj4tTP1TcwTLZINjNg9OJJSszITFRILS5JTMkHAFiaB5A&oq=bahia&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWJhaGlhKgIIADIHEC4YsAMYJzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzINEAAYgAQYigUYQxiwAzINEAAYgAQYigUYQxiwAzINEAAYgAQYigUYQxiwAzIOEAAY5AIY1gQYsAPYAQEyDhAAGOQCGNYEGLAD2AEBMg4QABjkAhjWBBiwA9gBATITEC4YgAQYigUYQxjIAxiwA9gBAjITEC4YQxiABBiKBRjIAxiwA9gBAjITEC4YgAQYigUYQxjIAxiwA9gBAjITEC4YgAQYigUYQxjIAxiwA9gBAkilClAAWABwAXgBkAEAmAEAoAEAqgEAuAEByAEAmAIBoAIImAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIkgcBMaAHAA&sclient=gws-wiz-serp"
+                target="_blank"
+                >Bahia</a
+              >
+            </td>
+            <td>14 141 626</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=%0D%0Aparan%C3%A1%0D%0A&sca_esv=ba32b498f538259a&sca_upv=1&hl=pt-BR&sxsrf=ACQVn0_IM_IRIwlZy78S5xqP77eiYZuDUg%3A1712330550434&source=hp&ei=NhcQZp-HBf_j2roP16SswA8&iflsig=ANes7DEAAAAAZhAlRnAP7VtNha7KLGJBiVJyMDWOb84w&udm=&ved=0ahUKEwif-rOxsKuFAxX_sVYBHVcSC_gQ4dUDCBU&uact=5&oq=%0D%0Aparan%C3%A1%0D%0A&gs_lp=Egdnd3Mtd2l6IgkKcGFyYW7DoQpIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMA4gMFEgExIECSBwCgBwA&sclient=gws-wiz"
+                target="_blank"
+                >Paraná</a
+              >
+            </td>
+            <td>11 444 380</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=rio+grande+do+sul&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09B41eZXwZwSfihBCnau_61Cv7oiw%3A1712330506899&ei=ChcQZuDJNuyj5OUPl_uRyAY&udm=&gs_ssp=eJzj4tTP1TcwzIm3TDFg9BIsysxXSC9KzEtJVUjJVyguzQEAiAoJdg&oq=Rio+gra&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1JpbyBncmEqAggAMg0QLhiABBiKBRhDGLEDMgsQLhiABBixAxiDATIIEAAYgAQYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyCBAuGLEDGIAEMgoQABiABBiKBRhDMgoQLhiABBiKBRhDMgoQABiABBiKBRhDMgUQLhiABDIcEC4YgAQYigUYQxixAxiXBRjcBBjeBBjgBNgBBEiD0QZQpQRYy8gGcAF4AZABAJgB3QGgAcEIqgEFMS43LjG4AQPIAQD4AQGYAgqgAvIIwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAhAQABiABBiKBRhDGLEDGMkDwgILEAAYgAQYigUYkgPCAgoQIxiABBiKBRgnwgIKEC4YQxiABBiKBcICERAuGIMBGMcBGLEDGNEDGIAEwgIQEC4YgAQYigUYQxixAxiDAcICBBAAGAPCAgoQLhiABBiKBRgnwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgIOEC4YgAQYsQMYxwEY0QPCAggQLhiABBixA8ICDxAjGIAEGIoFGCcYRhj7AcICGRAAGIAEGIoFGEYY-wEYlwUYjAUY3QTYAQOYAwDiAwUSATEgQIgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYE7oGBggEEAEYFJIHBTEuOC4xoAfBqgE&sclient=gws-wiz-serp"
+                target="_blank"
+                >Rio Grande do Sul</a
+              >
+            </td>
+            <td>10 882 965</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=pernambuco&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_1i12GzLhq1bV9nkxR0hI4cu_Zfg%3A1712330617631&ei=eRcQZtCPJtLX5OUPoc2V2AM&udm=&gs_ssp=eJzj4tTP1TcwzEgpKDBg9OIqSC3KS8xNKk3OBwBT2Qed&oq=per&gs_lp=Egxnd3Mtd2l6LXNlcnAiA3BlcioCCAAyDRAuGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyDhAuGIAEGIoFGLEDGIMBMgoQLhiABBiKBRhDMgoQABiABBiKBRhDMg0QLhiABBiKBRhDGLEDMg4QLhiABBixAxjHARjRAzILEC4Y1AIYsQMYgAQyCxAuGNQCGLEDGIAEMgoQABiABBiKBRhDMhwQLhiABBiKBRhDGLEDGJcFGNwEGN4EGOAE2AEBSPEQUABY6ApwAXgBkAEAmAGNAaABiASqAQMwLjS4AQPIAQD4AQGYAgWgAqcEwgIKECMYgAQYigUYJ8ICEBAuGIAEGIoFGEMYsQMYgwHCAhAQABiABBiKBRhDGLEDGIMBwgIKEC4YQxiABBiKBcICCxAAGIAEGLEDGIMBwgINEAAYgAQYChixAxiDAcICBRAAGIAEwgILEC4YgAQYxwEYrwHCAgcQABiABBgKmAMAugYGCAEQARgUkgcDMS40oAe1Qw&sclient=gws-wiz-serp"
+                target="_blank"
+                >Pernambuco</a
+              >
+            </td>
+            <td>9 058 931</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=cear%C3%A1+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09HpCEoxo10Fx82uDV1tDXHpoZkjw%3A1712330852530&ei=ZBgQZov5H8DL1sQP5oWtoAM&udm=&gs_ssp=eJzj4tTP1TcwzEjJSTNg9OJNTk0sOrxQIbW4JDElHwBuQAkF&oq=ceara&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWNlYXJhKgIIATINEC4YQxixAxiABBiKBTIKEC4YgAQYigUYQzIKEAAYgAQYigUYQzIKEC4YQxiABBiKBTIKEAAYgAQYigUYQzIIEAAYgAQYsQMyBRAAGIAEMg4QABiABBiKBRixAxiDATIEEAAYAzIKEAAYgAQYigUYQzIcEC4YQxixAxiABBiKBRiXBRjcBBjeBBjgBNgBA0jfJ1COAViVG3ACeAGQAQCYAYwBoAG_BqoBAzAuN7gBAcgBAPgBAZgCCqAC_QyoAhLCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgIZEC4YgAQYigUYQxjHARjRAxjIAxiwA9gBAsICExAuGIAEGIoFGEMYyAMYsAPYAQLCAgcQLhiABBgKwgIHEAAYgAQYCsICCBAAGB4YDxgKwgIWEC4YgAQYChiXBRjcBBjeBBjgBNgBA8ICBBAjGCfCAgoQIxiABBiKBRgnwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQABiABBixAxiDAcICBxAuGOoCGCfCAgcQIxjqAhgnwgIcEC4YgAQYigUYQxjHARjRAxjIAxjqAhi0AtgBAsICFhAuGEMYgAQYigUYyAMY6gIYtALYAQLCAhYQLhiABBiKBRhDGMgDGOoCGLQC2AECwgIQEC4YgAQYigUYQxjHARjRA8ICDRAuGIAEGIoFGEMYsQPCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNEDwgIOEC4YgAQYsQMYxwEY0QPCAhAQLhiABBiKBRhDGLEDGIMBwgIIEC4YgAQYsQPCAhkQABhDGLEDGIAEGIoFGJcFGIwFGN0E2AEEmAMIiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUugYGCAQQARgTkgcHMi43LjUtMaAHi2M&sclient=gws-wiz-serp"
+                target="_blank"
+                >Ceará</a
+              >
+            </td>
+            <td>8 794 957</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=par%C3%A1&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_qYDtpUDwTWDrM-yJA7bXlqqNevQ%3A1712331308921&ei=LBoQZrnsN5XY1sQPsNCZ4AE&udm=&ved=0ahUKEwi5sp-bs6uFAxUVrJUCHTBoBhwQ4dUDCBA&uact=5&oq=par%C3%A1&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXBhcsOhMhAQLhhDGIMBGLEDGIAEGIoFMhAQABiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMgsQLhiDARixAxiABDIQEAAYgAQYigUYQxixAxiDATILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDATIKEAAYgAQYigUYQzILEC4YgwEYsQMYgAQyHxAuGEMYgwEYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQNIzBpQtQVYlBdwBXgBkAEAmAGJAaAB3gOqAQMwLjS4AQPIAQD4AQGYAgmgAoQEwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhkQLhiABBiKBRhDGMcBGNEDGMgDGLAD2AECwgITEC4YgAQYigUYQxjIAxiwA9gBAsICChAjGIAEGIoFGCfCAhAQLhiABBiKBRhDGLEDGIMBwgIWEC4YQxiDARjHARixAxjRAxiABBiKBcICDhAuGIAEGMcBGK8BGI4FwgIFEAAYgATCAggQLhiABBixA8ICCxAuGIAEGLEDGIMBmAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUkgcDNS40oAf0KQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Pará</a
+              >
+            </td>
+            <td>8 121 025</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=Santa+Catarina&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_x23r7cnseL6kpCdBisVPtF8TyJg%3A1712331319428&ei=NxoQZq7fGYLZ1sQP3M-OmAE&udm=&ved=0ahUKEwju1qCgs6uFAxWCrJUCHdynAxMQ4dUDCBA&uact=5&oq=Santa+Catarina&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlNhbnRhIENhdGFyaW5hMggQLhixAxiABDIUEC4YgAQYsQMYgwEYxwEYrwEYjgUyBRAAGIAEMggQABiABBixAzIIEAAYgAQYsQMyCxAuGIAEGMcBGK8BMgUQLhiABDIFEAAYgAQyBRAuGIAEMgUQABiABDIXEC4YsQMYgAQYlwUY3AQY3gQY4ATYAQFIrQlQAFgAcAB4AZABAJgB4AGgAeABqgEDMi0xuAEDyAEA-AEC-AEBmAIBoALqAZgDALoGBggBEAEYFJIHAzItMaAHkBQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Santa Catarina</a
+              >
+            </td>
+            <td>7 610 361</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=goi%C3%A1s+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09rUGrZRxGGna1bNM-EMpYT6L9S2A%3A1712331564203&ei=LBsQZv6EDIDC5OUPjMGziAU&udm=&gs_ssp=eJzj4tTP1TcwNKqsijdg9OJNz888vLBYIbW4JDElHwBtjgkC&oq=Goi%C3%A1s+es&gs_lp=Egxnd3Mtd2l6LXNlcnAiCUdvacOhcyBlcyoCCAEyCxAuGIMBGLEDGIAEMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYywEyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMhoQLhiDARixAxiABBiXBRjcBBjeBBjgBNgBA0iyD1DNAVjcCXABeAGQAQCYAXCgAcsCqgEDMC4zuAEByAEA-AEBmAIEoALhAsICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIPEAAYgAQYigUYQxiwAxgKwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgITEC4YQxiABBiKBRjIAxiwA9gBAsICCBAAGIAEGLEDwgIEEAAYA5gDAIgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFJIHAzEuM6AHlR0&sclient=gws-wiz-serp"
+                target="_blank"
+                >Goiás</a
+              >
+            </td>
+            <td>7 056 495</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=maranh%C3%A3o&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08ha88GVdHmraQtM3qhd-9zLwJNTA%3A1712331568162&ei=MBsQZofHCajC5OUPlMKEkAk&udm=&gs_ssp=eJzj4tTP1TcwzEgxrjRg9OLMTSxKzMs4vDgfAEpMB4g&oq=maranah&gs_lp=Egxnd3Mtd2l6LXNlcnAiB21hcmFuYWgqAggAMgoQLhgKGLEDGIAEMgoQABiABBiKBRhDMhAQABiABBiKBRhDGLEDGIMBMgYQABgDGAoyBhAuGAMYCjIGEAAYAxgKMgYQABgDGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyGRAuGAoYsQMYgAQYlwUY3AQY3gQY4ATYAQFInRNQAFjdB3AAeAGQAQCYAYEBoAG5BqoBAzEuNrgBA8gBAPgBAZgCB6AC3QbCAgoQLhiABBiKBRgnwgIMECMYgAQYigUYExgnwgIKECMYgAQYigUYJ8ICChAuGIAEGIoFGEPCAgsQABiABBixAxiDAcICFxAuGIAEGIoFGJcFGNwEGN4EGOAE2AEBwgIREC4YgAQYsQMYxwEYrwEYjgXCAg0QABiABBiKBRhDGLEDwgIOEC4YxwEYsQMY0QMYgATCAgsQLhiABBixAxiDAcICDRAuGIAEGIoFGEMYsQPCAg0QLhhDGLEDGIAEGIoFwgIIEAAYgAQYsQPCAgUQABiABMICHBAuGEMYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQHCAgoQLhhDGIAEGIoFwgIIEC4YsQMYgATCAgQQABgDwgIEEC4YA8ICGRAuGEMYgAQYigUYlwUY3AQY3gQY4ATYAQHCAggQLhiABBixA8ICBRAuGIAEwgIXEC4YsQMYgAQYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwMwLjegB7hw&sclient=gws-wiz-serp"
+                target="_blank"
+                >Maranhão</a
+              >
+            </td>
+            <td>6 775 805</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=Para%C3%ADba&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_gaqUBHvPDWluLDLjL930fdPIpHg%3A1712331595155&ei=SxsQZpTzCIKB5OUP_PqcuA8&udm=&ved=0ahUKEwjUxN2jtKuFAxWCALkGHXw9B_cQ4dUDCBA&uact=5&oq=Para%C3%ADba&gs_lp=Egxnd3Mtd2l6LXNlcnAiCFBhcmHDrWJhMg0QLhhDGLEDGIAEGIoFMgoQABiABBiKBRhDMgoQABiABBiKBRhDMgsQABiABBixAxiDATIKEAAYgAQYigUYQzIIEC4YsQMYgAQyBRAuGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhwQLhhDGLEDGIAEGIoFGJcFGNwEGN4EGOAE2AEBSPYEUABYAHAAeAGQAQCYAX6gAX6qAQMwLjG4AQPIAQD4AQL4AQGYAgGgAoYBmAMAugYGCAEQARgUkgcDMC4xoAf5Cw&sclient=gws-wiz-serp"
+                target="_blank"
+                >Paraíba</a
+              >
+            </td>
+            <td>3 974 687</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=amazonas+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_ED9akuTkB6DMeowEGJTsdBK6IFg%3A1712331674175&ei=mhsQZt-tCoOo5OUPkrqYoAo&udm=&gs_ssp=eJzj4tTP1TcwzEjJrjRg9OJPzE2sys9LLFZILS5JTMkHAH6qCXQ&oq=amazonas+es&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2FtYXpvbmFzIGVzKgIIATIFEAAYgAQyBRAuGIAEMgUQABiABDIIEC4YgAQY1AIyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyFBAuGIAEGJcFGNwEGN4EGOAE2AEDSK0OUOABWJcFcAF4AZABAJgBfaAB3gKqAQMwLjO4AQHIAQD4AQGYAgagAp4NwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGEMYgAQYigUYyAMYsAPYAQLCAhMQLhiABBiKBRhDGMgDGLAD2AECwgIbEC4YgAQYigUYQxjHARjRAxjIAxiwAxgK2AECwgIIEC4YgAQYsQPCAg4QLhiABBiKBRixAxiDAcICDhAuGIAEGMcBGK8BGI4FwgIREC4YgAQYsQMYgwEYxwEY0QPCAgoQLhiABBiKBRhDwgIKEAAYgAQYigUYQ8ICCxAuGIAEGMcBGK8BwgIOEAAYgAQYigUYsQMYgwHCAhcQLhiABBixAxiXBRjcBBjeBBjgBNgBA8ICIBAuGIAEGLEDGIMBGMcBGNEDGJcFGNwEGN4EGOAE2AEDmAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUkgcLMS4zLjQtMS4wLjGgB5Yu&sclient=gws-wiz-serp"
+                target="_blank"
+                >Amazonas</a
+              >
+            </td>
+            <td>3 941 613</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=esp%C3%ADrito+santo+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08D2zLrziZzQPy26vBLvX_M1GLCOA%3A1712331680423&ei=oBsQZr2zGbCy5OUPv_KsyAQ&udm=&gs_ssp=eJzj4tTP1TcwMiypTDJg9BJLLS44vLYosyRfoTgxD0imFpckpuQDANNkDK0&oq=Esp%C3%ADrito+Santo&gs_lp=Egxnd3Mtd2l6LXNlcnAiD0VzcMOtcml0byBTYW50byoCCAAyDRAuGIAEGIoFGEMYsQMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyBRAAGIAEMgoQABiABBiKBRhDMggQABiABBixAzIFEC4YgAQyBRAAGIAEMg0QABiABBiKBRhDGLEDMggQABiABBixAzIcEC4YgAQYigUYQxixAxiXBRjcBBjeBBjgBNgBAUilCFAAWABwAHgBkAEAmAGAAaABgAGqAQMwLjG4AQHIAQD4AQL4AQGYAgKgAsMImAMAugYGCAEQARgUkgcHMC4xLjYtMaAHtgo&sclient=gws-wiz-serp"
+                target="_blank"
+                >Espírito Santo</a
+              >
+            </td>
+            <td>3 833 712</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=mato+grosso&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08s0X98E6PMcgf4fgCJIKiuEMs7zA%3A1712331703886&ei=txsQZpzKNdWe5OUPy-CSgA8&udm=&gs_ssp=eJzj4tTP1TcwzEjJqTRg9OLOTSzJV0gvyi8uzgcAWpMH5Q&oq=mato+gro&gs_lp=Egxnd3Mtd2l6LXNlcnAiCG1hdG8gZ3JvKgIIATINEC4YQxixAxiABBiKBTINEC4YQxixAxiABBiKBTIKEAAYgAQYigUYQzINEAAYgAQYigUYQxixAzIKEAAYgAQYigUYQzIQEAAYgAQYigUYQxixAxiDATIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIFEAAYgAQyChAAGIAEGIoFGEMyHBAuGEMYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQNIiBlQ4QhYkBBwA3gBkAEAmAGJAaABngeqAQMwLji4AQPIAQD4AQGYAg2gArAYwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAgoQLhiABBiKBRgnwgIMECMYgAQYigUYExgnwgIKEC4YgAQYigUYQ8ICCxAAGIAEGLEDGIMBwgIOEC4YgAQYxwEYrwEYjgXCAhcQLhiABBiKBRiXBRjcBBjeBBjgBNgBA8ICChAjGIAEGIoFGCfCAhEQLhiABBixAxjHARivARiOBcICDhAuGMcBGLEDGNEDGIAEwgINEC4YgAQYigUYQxixA8ICBRAuGIAEwgITEC4YgAQYigUYQxixAxiDARjUAsICEBAAGIAEGIoFGEMYsQMYyQPCAggQLhixAxiABMICCxAuGIAEGIoFGLEDwgIIEC4YgAQYsQOYAwCIBgGQBhG6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBSSBwkzLjguNi0xLjGgB7qAAQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Mato Grosso</a
+              >
+            </td>
+            <td>3 658 649</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=rio+grande+do+norte&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_hRIsplzgE79YF-j0ac0-m1Ki2Jw%3A1712331732727&ei=1BsQZpz9K5b95OUPzbiIwAY&udm=&gs_ssp=eJzj4tTP1TcwzEgpSjZg9BIuysxXSC9KzEtJVUjJV8jLLypJBQCh2wqF&oq=rio+grande+&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3JpbyBncmFuZGUgKgIIATIKEC4YgAQYigUYJzIQEC4YgAQYigUYQxixAxiDATIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIIEAAYgAQYsQMyChAAGIAEGIoFGEMyBRAuGIAEMggQLhiABBixAzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIXEC4YgAQYigUYlwUY3AQY3gQY4ATYAQJI5RJQAFjvCXAAeAGQAQCYAX-gAf4JqgEEMC4xMbgBA8gBAPgBAZgCDKACjxLCAgoQIxiABBiKBRgnwgIKEC4YgAQYigUYQ8ICCxAuGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARjRA8ICCBAuGLEDGIAEwgIPECMYgAQYigUYJxhGGPsBwgIZEAAYgAQYigUYRhj7ARiXBRiMBRjdBNgBAZgDALoGBggBEAEYE7oGBggCEAEYFJIHCDAuMTEuNi0xoAfa1wE&sclient=gws-wiz-serp"
+                target="_blank"
+                >Rio Grande do Norte</a
+              >
+            </td>
+            <td>3 302 729</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=piau%C3%AD+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09DUylkAeGpg4STzM0R5Kj_G9XTnA%3A1712331787927&ei=CxwQZqSaOOuJ5OUPyqKxwAw&udm=&gs_ssp=eJzj4tTP1TcwzEgpzDJg9OItyEwsPbxWIbW4JDElHwBwPgku&oq=Piau%C3%AD+es&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVBpYXXDrSBlcyoCCAAyBRAuGIAEMggQLhiABBjUAjIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDICECYyAhAmMhQQLhiABBiXBRjcBBjeBBjgBNgBA0jmGlCTC1iTFXACeAGQAQCYAe8BoAHmBKoBBTAuMy4xuAEByAEA-AEBmAIGoAKMBcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgIHEC4YChiABMICChAAGIAEGAoYsQPCAgcQABiABBgKwgIHEC4YgAQYCsICChAuGAoY1AIYgATCAg0QABiABBixAxhGGPsBwgIIEAAYgAQYsQPCAhkQABiABBixAxhGGPsBGJcFGIwFGN0E2AEEmAMAiAYBkAYSugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUugYGCAQQARgTkgcFMi4zLjGgB64t&sclient=gws-wiz-serp"
+                target="_blank"
+                >Piauí</a
+              >
+            </td>
+            <td>3 271 199</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=alagoas+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08qvRS4Cq3nDKdKkjy6EG6zfssBBg%3A1712331793756&ei=ERwQZuqwLajY5OUP-Oiq4Ac&udm=&gs_ssp=eJzj4tTP1TcwNK2qqDBg9OJLzElMz08sVkgtLklMyQcAcjwI4A&oq=alago&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWFsYWdvKgIIADIKEC4YQxiABBiKBTIIEC4YsQMYgAQyCBAuGIAEGLEDMgUQLhiABDIKEAAYgAQYigUYQzIKEC4YgAQYigUYQzILEC4YgAQYsQMYgwEyBRAuGIAEMgUQABiABDIKEAAYgAQYigUYQzIZEC4YQxiABBiKBRiXBRjcBBjeBBjgBNgBAUivHlAAWP8FcAB4AZABAJgBe6ABxgSqAQMwLjW4AQPIAQD4AQGYAgagAqIWwgIKEC4YgAQYigUYJ8ICChAjGIAEGIoFGCfCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNEDwgIXEC4YgAQYigUYlwUY3AQY3gQY4ATYAQHCAgQQIxgnwgIIEAAYgAQYsQPCAhAQABiABBiKBRhDGLEDGIMBwgILEAAYgAQYsQMYgwHCAgsQLhiDARixAxiABJgDALoGBggBEAEYFJIHBzAuNS44LTGgB6N3&sclient=gws-wiz-serp"
+                target="_blank"
+                >Alagoas</a
+              >
+            </td>
+            <td>3 127 683</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=distrito+federal+%C3%A9+um+estado&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0-O8oUnQaJPg2sNhzu2kQV9yalngA%3A1712331819704&ei=KxwQZpTMKtG85OUPk8-_-AI&udm=&gs_ssp=eJzj4tTP1TcwNMqxqDRg9JJNySwuKcosyVdIS01JLUrMUTi8UqE0VyG1uCQxJR8AIgYOug&oq=distri&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRpc3RyaSoCCAAyChAuGEMYgAQYigUyCxAAGIAEGIoFGJIDMggQABiABBiSAzILEAAYgAQYsQMYgwEyDhAAGIAEGIoFGLEDGIMBMggQABiABBixAzILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDATIIEAAYgAQYsQMyGRAuGEMYgAQYigUYlwUY3AQY3gQY4ATYAQJI7g5QAFiOBnAAeAGQAQCYAX2gAbUFqgEDMC42uAEByAEA-AEBmAIGoALSBcICChAjGIAEGIoFGCfCAgoQLhiABBiKBRgnwgIKEC4YgAQYigUYQ8ICChAAGIAEGIoFGEPCAgUQABiABMICDxAjGIAEGIoFGCcYRhj_AcICBBAjGCfCAhAQABiABBiKBRhDGLEDGIMBwgIFEC4YgATCAhkQABiABBiKBRhGGP8BGJcFGIwFGN0E2AEBwgINEAAYgAQYigUYQxjJA8ICCxAAGIAEGIoFGLEDwgINEC4YQxixAxiABBiKBcICHBAuGEMYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQLCAg4QABiABBixAxiDARjJA5gDALoGBggBEAEYE7oGBggCEAEYFJIHAzAuNqAHokQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Distrito Federal</a
+              >
+            </td>
+            <td>2 817 381</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=Mato+Grosso+do+Sul&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08TTzobo110NJr4QxubDs4R26rITQ%3A1712331846257&ei=RhwQZo2cD_275OUPk9y3uAw&udm=&ved=0ahUKEwiN17ubtauFAxX9HbkGHRPuDccQ4dUDCBA&uact=5&oq=Mato+Grosso+do+Sul&gs_lp=Egxnd3Mtd2l6LXNlcnAiEk1hdG8gR3Jvc3NvIGRvIFN1bDIKEAAYgAQYigUYQzIIEC4YsQMYgAQyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQLhiABEilA1AAWABwAHgBkAEAmAF0oAF0qgEDMC4xuAEDyAEA-AEC-AEBmAIBoAJ7mAMAkgcDMC4xoAeHDQ&sclient=gws-wiz-serp"
+                target="_blank"
+                >Mato Grosso do Sul</a
+              >
+            </td>
+            <td>2 757 013</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=Sergipe&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0-6LEXT_JVXKkJYXVT5tO2ucodFaQ%3A1712331863953&ei=VxwQZrLjOcv95OUP-d6SqA4&udm=&ved=0ahUKEwjy6vOjtauFAxXLPrkGHXmvBOUQ4dUDCBA&uact=5&oq=Sergipe&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1NlcmdpcGUyDRAuGEMYsQMYgAQYigUyDRAAGIAEGIoFGEMYsQMyEBAAGIAEGIoFGEMYsQMYgwEyCBAuGIAEGLEDMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgQQABgDMgUQABiABDIFEAAYgAQyHBAuGEMYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQFI3gJQAFgAcAB4AZABAJgBd6ABd6oBAzAuMbgBA8gBAPgBAvgBAZgCAaACf5gDALoGBggBEAEYFJIHAzAuMaAHxAs&sclient=gws-wiz-serp"
+                target="_blank"
+                >Sergipe</a
+              >
+            </td>
+            <td>2 209 558</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=rond%C3%B4nia&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn08xYpsFn9Bn3de7zvkI4d1LRWjWkA%3A1712331880903&ei=aBwQZs3jNry35OUPxe---AY&udm=&gs_ssp=eJzj4tTP1TcwzEgpNjdg9OIsys9LObwlLzMRAExbB5w&oq=Rond%C3%B4nia&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVJvbmTDtG5pYSoCCAAyDRAuGIAEGIoFGEMYsQMyCBAAGIAEGLEDMgUQABiABDILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyHBAuGIAEGIoFGEMYsQMYlwUY3AQY3gQY4ATYAQNI0BFQiAFY8ARwAXgBkAEAmAGDAaAB8AGqAQMwLjK4AQPIAQD4AQL4AQGYAgOgAoECwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAggQABiABBiiBJgDAIgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFJIHAzEuMqAH9go&sclient=gws-wiz-serp"
+                target="_blank"
+                >Rondônia</a
+              >
+            </td>
+            <td>1 581 196</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=tocantins&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09kbIMejSwpZEqZLUYyau04HtM-8Q%3A1712331900469&ei=fBwQZoigHIr25OUP5vGxUA&udm=&gs_ssp=eJzj4tDP1TdIMcg2MWD04izJT07MK8nMKwYAQLUGmA&oq=tocan&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXRvY2FuKgIIADINEC4YQxixAxiABBiKBTIIEAAYgAQYsQMyChAAGIAEGIoFGEMyCBAuGIAEGLEDMg0QABiABBiKBRhDGLEDMgUQABiABDIIEC4YsQMYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyHBAuGEMYsQMYgAQYigUYlwUY3AQY3gQY4ATYAQNI6RJQzAVY2glwAngBkAEAmAF5oAG_BKoBAzAuNbgBAcgBAPgBAZgCB6AC6ATCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgITEC4YgAQYigUYQxjIAxiwA9gBAsICExAuGEMYgAQYigUYyAMYsAPYAQLCAgoQIxiABBiKBRgnwgIKEC4YgAQYigUYQ8ICERAuGIAEGLEDGIMBGMcBGNEDwgIOEAAYgAQYigUYsQMYgwHCAgQQIxgnwgILEC4YgAQYsQMYgwHCAg0QLhiABBiKBRhDGLEDwgILEAAYgAQYsQMYgwHCAg4QLhiABBjHARivARiOBcICCxAuGIAEGIoFGLEDwgIcEC4YgAQYigUYQxixAxiXBRjcBBjeBBjgBNgBA8ICCxAAGIAEGIoFGLEDmAMAiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgUkgcDMi41oAftSA&sclient=gws-wiz-serp"
+                target="_blank"
+                >Tocantins</a
+              >
+            </td>
+            <td>1 511 460</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?q=acre&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn09AQmeN1ybVLANpYn3Dc4WQwupK6g%3A1712331921656&ei=kRwQZofNJ6P35OUPja6psAY&udm=&gs_ssp=eJzj4tTP1TcwzEhJrzJg9GJJTC5KBQAsCQUH&oq=Acre&gs_lp=Egxnd3Mtd2l6LXNlcnAiBEFjcmUqAggAMhAQLhiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMhAQABiABBiKBRhDGLEDGIMBMgUQLhiABDIIEC4YgAQYsQMyCxAAGIAEGLEDGIMBMggQLhiABBixAzIEEAAYAzIKEAAYgAQYigUYQzILEAAYgAQYigUYsQMyHxAuGIAEGIoFGEMYsQMYgwEYlwUY3AQY3gQY4ATYAQJIqQxQeFi4BnABeAGQAQCYAYsBoAGFAqoBAzAuMrgBAcgBAPgBAvgBAZgCBKACngfCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICExAuGEMYgAQYigUYyAMYsAPYAQHCAhUQLhhDGIAEGIoFGMgDGLADGArYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AEBwgIZEC4YQxivARjHARiABBiKBRjIAxiwA9gBAcICHBAuGIAEGIoFGEMYxwEYrwEYyAMYsAMYjgXYAQHCAhkQLhiABBiKBRhDGMcBGK8BGMgDGLAD2AEBwgIIEAAYgAQYogSYAwCIBgGQBhS6BgYIARABGAi6BgYIAhABGBSSBwcxLjIuNS0xoAfkDw&sclient=gws-wiz-serp"
+                target="_blank"
+                >Acre</a
+              >
+            </td>
+            <td>830 018</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwzEjJsjRg9OJNzE0sOLxQIbW4JDElHwBrIgja&q=amap%C3%A1+estado&oq=Amap%C3%A1+es&gs_lcrp=EgZjaHJvbWUqBwgBEC4YgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDINCAUQLhivARjHARiABDIHCAYQABiABDIHCAcQABiABDIICAgQABgWGB4yCAgJEAAYFhge0gEIMTQ2MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                target="_blank"
+                >Amapá</a
+              >
+            </td>
+            <td>733 759</td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwLCmMzzJg9GIvyi9KzMxNBAA-nQZb&q=roraima&oq=Roraima&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyDwgAEEUYORjjAhixAxiABDIKCAEQLhixAxiABDIKCAIQABixAxiABDIHCAMQABiABDITCAQQLhiDARjHARixAxjRAxiABDIHCAUQABiABDIHCAYQLhiABDIGCAcQBRhA0gEHOTY1ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8"
+                target="_blank"
+                >Roraima</a
+              >
+            </td>
+            <td>636 707</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <th>Total de Habitantes</th>
+          <td>210.147.125</td>
+        </tfoot>
+      </table>
     </main>
-</body>
+  </body>
 </html>
