@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 520px;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      caption {
+        font-size: 1.5em;
+      }
+
+      
+      tfoot {
+        text-align: left;
+      }
+      td {
+        text-align: center;
+      }
+
+      .destaque {
+        background-color: bisque;
+      }
+
+      .cnome {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+    </colgroup>
+      <caption>
+        <strong>Cadastro</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col">Nome</th>
+          <th rowspan="2" scope="col">Sexo</th>
+          <th colspan="1" scope="col">Idade</th>
+          <th rowspan="2" scope="col">Prossião</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luiz</td>
+          <td>Masculino</td>
+          <td>26</td>
+          <td>Desempregado</td>
+        </tr>
+        <tr>
+          <td>Vinicius</td>
+          <td>Masculino</td>
+          <td>22</td>
+          <td>Auxiliar Admistrativo</td>
+        </tr>
+        <tr>
+          <td>Alvaro</td>
+          <td>Masculino</td>
+          <td>21</td>
+          <td>Analista de Dados</td>
+        </tr>
+        <tr>
+          <td>Lucas</td>
+          <td>Masculino</td>
+          <td>28</td>
+          <td>Desempregado</td>
+        </tr>
+        <tr>
+          <td>Nicolas</td>
+          <td>Masculino</td>
+          <td>26</td>
+          <td>Garçom/Estudante</td>
+        </tr>
+        <tr>
+          <td>Thomas</td>
+          <td>Masculino</td>
+          <td>22</td>
+          <td>Desempregado</td>
+        </tr>
+        <tr>
+          <td>Victor Eduardo</td>
+          <td>Masculino</td>
+          <td>25</td>
+          <td>Supervisor Escolar</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
