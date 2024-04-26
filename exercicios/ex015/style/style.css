@@ -36,8 +36,54 @@ main {
 iframe#tela {
     position: relative;
     top: 20px;
-    left: 39px;
-    border-radius: 32px;
+    left: 38px;
+    border-radius: 33px;
     width: 265px;
     height: 570px;
+}
+.sociais {
+    position: relative;
+   text-align: right;
+}
+
+section.sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 1px 1px black;
+    box-sizing: border-box;
+    
+}
+section.sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 10px black;
+    transition: tranform .3s, border 0.2s;
+}
+.home {
+    position: absolute;
+    left: 65%;
+    top: 135px;
+}
+.twitter {
+    position: absolute;
+    left: 65%;
+    top: 225px;
+}
+
+.youtube {
+    position: absolute;
+    left: 65%;
+    top: 315px;
+}
+
+.github {
+    position: absolute;
+    left: 65%;
+    top: 405px;
+}
+.instagram {
+    position: absolute;
+    left: 65%;
+    top: 505px;
 }
