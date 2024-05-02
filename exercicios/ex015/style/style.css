@@ -42,8 +42,10 @@ iframe#tela {
     height: 570px;
 }
 .sociais {
-    position: relative;
+   position: relative;
    text-align: right;
+   top: 24%;
+   right: 5%;
 }
 
 section.sociais img {
@@ -60,30 +62,4 @@ section.sociais img:hover {
     box-shadow: 3px 3px 10px black;
     transition: tranform .3s, border 0.2s;
 }
-.home {
-    position: absolute;
-    left: 65%;
-    top: 135px;
-}
-.twitter {
-    position: absolute;
-    left: 65%;
-    top: 225px;
-}
 
-.youtube {
-    position: absolute;
-    left: 65%;
-    top: 315px;
-}
-
-.github {
-    position: absolute;
-    left: 65%;
-    top: 405px;
-}
-.instagram {
-    position: absolute;
-    left: 65%;
-    top: 505px;
-}
