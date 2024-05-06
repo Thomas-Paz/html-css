@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo Tela */
+    
+body {
+    background-color: rgb(170, 169, 169);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    background-color: rgb(95, 98, 100);
+}
+header h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+nav ul {
+    text-align: center;
+    
+}
+nav li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+
+    
+}
+
+nav li:hover {
+    color: black;
+}
