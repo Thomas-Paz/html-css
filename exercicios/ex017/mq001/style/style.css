@@ -34,18 +34,33 @@ nav li{
     
     
 }
-
+nav {
+    display: none;
+}
 nav a {
     text-decoration: none;
     
 }
+i#burguer {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
 
 nav a:hover {
    
     border-radius: 7px;
     background-color: white;
     background-position: center;
-    text-align: center;
+    
 
     
 }
@@ -66,9 +81,8 @@ main h2 {
 main p {
     border-radius: 10px;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(253, 253, 253);
     width: 70%;
-    margin-left: 50%;
-    transform: translate(-50%);
+    margin: auto;
     padding: 10px;
 }

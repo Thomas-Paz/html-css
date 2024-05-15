@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" media="screen">
     <link rel="stylesheet" href="style/print.css" media="print">
 </head>
 <body>
     <header>
         <h1>PAZZANO</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu ()">menu</i>
+        <nav id="menu">
             <ul>
                 <a href="#">
                     <li>Home</li>
@@ -36,5 +38,14 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+         if (menu.style.display == 'block' ) {
+             menu.style.display = 'none'
+         } else {
+            menu.style.display = 'block'
+         }
+        }
+    </script>
 </body>
 </html>
