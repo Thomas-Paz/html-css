@@ -43,14 +43,14 @@ nav a {
 }
 i#burguer {
     color: white;
-    display: block;
-    text-align: center;
+    display: inline-block;
+    text-align: left;
     padding: 10px;
 }
 
 i#burguer:hover {
-    background-color: white;
-    color: black;
+    
+    
     cursor: pointer;
 }
 

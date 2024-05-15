@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" media="screen">
     <link rel="stylesheet" href="style/print.css" media="print">
+    <link rel="stylesheet" href="style/allstyle.css" media="screen">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>PAZZANO</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu ()">menu</i>
@@ -34,11 +35,21 @@
             <h2>teste de media queries</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolorem libero dolor saepe explicabo, sequi fugit optio incidunt. Commodi corporis cupiditate eius voluptates tenetur voluptatibus, voluptate quam repellat totam ratione possimus fugit. Molestias illo iusto quae quas placeat maxime corrupti eos! Pariatur facere eveniet vitae dignissimos eum quam a nostrum eos quibusdam nihil? Eius, nam. Tempore, nesciunt quos porro saepe dignissimos excepturi eum iusto veniam corporis est hic debitis unde id cum provident error. Veritatis id earum voluptates fuga voluptatum delectus omnis nesciunt iste nemo quaerat sunt quae blanditiis est et amet iusto vitae, illum dolorum eveniet vel? Autem, hic. Corporis a dolorem debitis odit veritatis nesciunt dolores eveniet, consequatur eum adipisci cumque voluptates laboriosam exercitationem facilis ipsum sed temporibus aliquid quidem ratione ab corrupti natus voluptatibus enim? 
                 
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusantium totam rem ipsam unde iure recusandae itaque explicabo rerum, tenetur molestias numquam autem consequuntur aliquid obcaecati aut placeat veniam perspiciatis ea vitae in, similique error! Nulla recusandae iusto odio voluptas ipsum ipsa non accusamus. Velit ipsa quisquam beatae. Quas quis dolor porro eveniet. Temporibus accusamus nostrum ipsum aspernatur. Laudantium laboriosam unde doloremque labore? Ipsa nihil sed in libero quibusdam totam tempore natus explicabo labore placeat, praesentium excepturi ipsum repellat laboriosam, eveniet sequi a quia, ea tempora debitis perspiciatis cum veniam? Error accusamus magnam expedita deserunt. Quidem sequi assumenda, ipsam quasi maiores sed corporis earum dolorem maxime tenetur possimus expedita tempora dignissimos delectus nisi nemo ut, rerum vel facilis, rem nulla voluptas tempore fuga. Consequatur aut sequi fuga ipsam nam corporis deleniti vitae minima, nobis deserunt aliquam laudantium nisi at voluptatem fugit, harum dolores adipisci soluta neque dolor cum. Earum itaque incidunt voluptatibus sint inventore, quisquam, laborum, magni est maxime minus aperiam culpa. Labore reprehenderit in quos totam tempora, eos autem alias aliquid vel? Hic autem in nisi sunt maiores quidem vel soluta, error laudantium laboriosam ratione veritatis, dolorem ipsam deleniti velit perspiciatis quae alias! Quisquam beatae, asperiores provident, sequi porro ipsum id laudantium minima eos neque aperiam, sapiente qui? Tempore nulla nobis rem inventore natus eum adipisci impedit explicabo magni autem veniam quae et ab quo, voluptate ut praesentium culpa facilis eos corporis qui consequuntur velit. Ipsa, distinctio sunt mollitia tempora officiis quisquam quia quos blanditiis possimus eum ullam culpa modi molestias quidem aliquam voluptatum pariatur earum ipsum et. Eius odio sequi consequatur! Pariatur praesentium nemo, ipsam porro, corrupti numquam necessitatibus quos quasi odio expedita error. Quasi labore nulla, voluptas dignissimos totam recusandae aut minus maxime delectus eos. Saepe consectetur veritatis recusandae quidem sequi sit voluptatibus dolores fugiat illum aperiam tenetur est nobis vitae esse modi cum inventore rem neque reiciendis, laudantium non autem. Earum veritatis suscipit, qui quae enim fugiat nihil, laborum ipsum saepe nobis autem! Enim et nostrum eius quos rerum ad vero nesciunt aut cupiditate repellat minus quis suscipit molestiae illum ipsam illo, possimus facere culpa adipisci. Minus velit repellat unde tenetur voluptate odio, ab illo perferendis illum repellendus sed aliquid voluptatem eaque, ut veritatis adipisci dolores consequatur ullam odit animi. Voluptatum fugiat adipisci consequuntur in nam. Quisquam sint porro cum vitae commodi veritatis unde reiciendis mollitia maxime, odit laborum est? Optio eos, eaque corporis ipsum neque non, nobis quam recusandae vel explicabo dolorum doloribus voluptatum, omnis odit nisi maxime alias eum repudiandae doloremque deserunt minima quia voluptate architecto fugit. Libero quam sit nesciunt iusto dolore atque voluptas dignissimos sunt consectetur dolorem nemo ratione, mollitia cupiditate animi beatae assumenda porro tenetur. Molestias ea saepe, in sequi voluptas repellat cum amet placeat sint a. Et fuga placeat ut omnis pariatur? At, voluptas sapiente? Reprehenderit eius dicta nulla voluptatem quas sequi amet quos obcaecati neque in esse alias possimus corrupti ipsam officiis distinctio dolore, quibusdam voluptatum sed ipsa harum? Quo ad exercitationem laboriosam asperiores esse quis voluptates unde eveniet.
+                
             </p>
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
          if (menu.style.display == 'block' ) {
              menu.style.display = 'none'
