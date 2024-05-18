@@ -16,7 +16,7 @@ Rosa: #D98282
 }
 
 body, html {
-background-color:#F2E5A2;
+background-color:#4B3D36;
 height: 100vh;
 width: 100vw;
 
@@ -31,5 +31,82 @@ main {
 
 section#login {
     position: absolute;
-    background-color: ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+
+    transition: width 0.1s, height 0.1s ;
+    transition-timing-function: ease;
+}
+
+section#login > div#image {
+    display: block;
+    background: #F2E5A2 url(../midia/Designer-1.jpeg);
+    height: 200px;
+    background-position: center top;
+    background-size: cover;
+    
+} 
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+div#form > p {
+    font-size: 1em;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    background-color: #F2E5A2;
+    color: rgb(65, 40, 8);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(65, 40, 8);
+    color: #F2E5A2;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    width: 50%;
+    height: 40%;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #ecd044;
+    border: 1px solid #ecd044;
+    border-radius: 7px;
+    color: rgb(65, 40, 8);
+    text-decoration: none;
+}
+
+form > a.botao > i {
+    font-size: 0.8em;
+}
+form > a.botao:hover {
+    background-color: rgb(65, 40, 8);
+    color: #ecd044;
+    border: 1px solid rgb(65, 40, 8);
 }
