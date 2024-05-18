@@ -34,6 +34,20 @@ Big Screen: above 1200
     section#login > div#form {
         float: right;
         width: 65%;
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    form > a.botao {
+        margin-top: 10px;
+        
+    }
+    form > input[type=submit] {
+        margin-top: 30px;
+    }
+
+    div > form  {
+        margin-top: 50px;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -58,6 +72,20 @@ Big Screen: above 1200
     section#login > div#form {
         float: left;
         width: 55%;
+        margin-top: 70px;
+        padding: 30px;
+    }
+    
+    form > a.botao {
+        margin-top: 10px;
+        
+    }
+    form > input[type=submit] {
+        margin-top: 30px;
+    }
+
+    div > form  {
+        margin-top: 50px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -84,8 +112,33 @@ Big Screen: above 1200
     section#login > div#form {
         float: right;
         width: 55%;
+        padding: 30px;
+        margin-top: 70px;
     }
     div#form > p {
         font-size: 1.3em;
+    }
+    
+    form > a.botao {
+        margin-top: 10px;
+        
+    }
+    form > input[type=submit] {
+        margin-top: 30px;
+    }
+
+    div > form  {
+        margin-top: 50px;
+    }
+    div.campo > input {
+        font-size: 1em;
+        width: calc(100% - 44px);
+        transform: translatey(-7px);
+        height: 95%;
+        border: none;
+        border-radius: 8px;
+        background-color:rgb(114, 71, 16);
+        color: black;
+        
     }
 }
